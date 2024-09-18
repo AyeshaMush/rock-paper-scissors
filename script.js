@@ -28,7 +28,7 @@ function getHumanChoice() {
     }
     else {
         alert("Invalid Choice! Refresh the game to try again!");
-        return;
+        return null;
     }
 }
 
@@ -75,14 +75,8 @@ function playGame() {
         }
 
         //tie between computer and human
-        else if (computerChoice === "rock" && humanChoice === "rock") {
-            alert(`It's a tie! Scissor beats paper! Your score: ${humanScore} and computer score: ${computerScore}`);
-        }
-        else if (computerChoice === "paper" && humanChoice === "paper") {
-            alert(`It's a tie! Scissor beats paper! Your score: ${humanScore} and computer score: ${computerScore}`);
-        }
-        else if (computerChoice === "scissor" && humanChoice === "scissor") {
-            alert(`It's a tie! Scissor beats paper! Your score: ${humanScore} and computer score: ${computerScore}`);
+        else if (computerChoice === "rock" && humanChoice === "rock" || computerChoice === "paper" && humanChoice === "paper" || computerChoice === "scissor" && humanChoice === "scissor") {
+            alert(`It's a tie! Your score: ${humanScore} and computer score: ${computerScore}`);
         }
     }
 
@@ -94,13 +88,18 @@ function playGame() {
         else if (humanScore < computerScore) {
             alert("You have lost the game! Try again!");
         }
+        else if (humanScore === computerScore) {
+            alert("It is a tie!");
+        }
     }
 
     //loop to play five rounds
     for (let i = 0; i < 5; i++) {
         let humanSelection = getHumanChoice();
         let computerSelection = getComputerChoice();
-
+        if (humanSelection === null) {
+            return;
+        }
         playRound(humanSelection, computerSelection);
     }
 
