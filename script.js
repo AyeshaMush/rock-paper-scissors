@@ -28,6 +28,7 @@ function getHumanChoice() {
     }
     else {
         alert("Invalid Choice! Refresh the game to try again!");
+        return;
     }
 }
 
@@ -40,7 +41,7 @@ function playGame() {
 
     //welcome message and game rules
     alert("Welcome to this game of rock, paper and scissors!");
-    alert("You will be playing 5 rounds against the computer. Remember that rock crushes scissors, scissors cut paper, and paper covers rock.");
+    alert("You will be playing 5 rounds against the computer. Remember that rock beats scissors, scissors beat paper, and paper beats rocks.");
 
     //function to play a single round of rock, paper and scissors
     function playRound(humanChoice, computerChoice) {
@@ -75,15 +76,12 @@ function playGame() {
 
         //tie between computer and human
         else if (computerChoice === "rock" && humanChoice === "rock") {
-            computerScore++;
             alert(`It's a tie! Scissor beats paper! Your score: ${humanScore} and computer score: ${computerScore}`);
         }
         else if (computerChoice === "paper" && humanChoice === "paper") {
-            computerScore++;
             alert(`It's a tie! Scissor beats paper! Your score: ${humanScore} and computer score: ${computerScore}`);
         }
         else if (computerChoice === "scissor" && humanChoice === "scissor") {
-            computerScore++;
             alert(`It's a tie! Scissor beats paper! Your score: ${humanScore} and computer score: ${computerScore}`);
         }
     }
