@@ -16,4 +16,21 @@ function getComputerChoice() {
     }
 
 }
-console.log(getComputerChoice());
+
+//function to get choice from player
+function getHumanChoice(){
+    //toLowerCase() method used to make inputs case insensitive
+    let playerChoice=prompt("Choose rock, paper or scissor(s): ","").toLowerCase();
+    if(playerChoice==="rock"){
+        return "rock";
+    }
+    else if(playerChoice==="paper"){
+        return "paper";
+    }
+    else if(playerChoice==="scissor" || playerChoice==="scissors"){
+        return "scissor";
+    }
+    else{
+        alert("Invalid Choice! Refresh the game to try again!");
+    }
+}
