@@ -1,7 +1,3 @@
-//welcome message and game rules
-// alert("Welcome to this game of rock, paper and scissors!");
-// alert("You will be playing 5 rounds against the computer. Remember that rock crushes scissors, scissors cut paper, and paper covers rock.");
-
 //function to get computer choice
 function getComputerChoice() {
     //function will generate random numbers between 0-2
@@ -41,6 +37,10 @@ function playGame() {
     //score counters
     let humanScore = 0;
     let computerScore = 0;
+
+    //welcome message and game rules
+    alert("Welcome to this game of rock, paper and scissors!");
+    alert("You will be playing 5 rounds against the computer. Remember that rock crushes scissors, scissors cut paper, and paper covers rock.");
 
     //function to play a single round of rock, paper and scissors
     function playRound(humanChoice, computerChoice) {
@@ -88,6 +88,16 @@ function playGame() {
         }
     }
 
+    //function to determine final winners
+    function finalWinner() {
+        if (humanScore > computerScore) {
+            alert("Congratulations! You have won the game!");
+        }
+        else if (humanScore < computerScore) {
+            alert("You have lost the game! Try again!");
+        }
+    }
+
     //loop to play five rounds
     for (let i = 0; i < 5; i++) {
         let humanSelection = getHumanChoice();
@@ -95,6 +105,8 @@ function playGame() {
 
         playRound(humanSelection, computerSelection);
     }
+
+    finalWinner();
 }
 
 playGame();
