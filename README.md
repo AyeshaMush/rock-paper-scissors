@@ -1,7 +1,7 @@
 # rock-paper-scissors
 A rock, paper and scissors game in JavaScript
 
-A console-based rock, paper and scissors game in JavaScript.
+A rock, paper and scissors game with GUI in JavaScript.
 
 ->Skills used in this project:
 
@@ -12,4 +12,6 @@ A console-based rock, paper and scissors game in JavaScript.
 3. Working with functions
 
 4. Working with loops
+
+5. Working with DOM and event listeners 
 
