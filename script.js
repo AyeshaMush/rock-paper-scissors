@@ -93,15 +93,14 @@ function playGame() {
         }
     }
 
-    //loop to play five rounds
-    for (let i = 0; i < 5; i++) {
+    //removed the logic of playing 5 rounds
+
         let humanSelection = getHumanChoice();
         let computerSelection = getComputerChoice();
         if (humanSelection === null) {
             return;
         }
         playRound(humanSelection, computerSelection);
-    }
 
     finalWinner();
 }
