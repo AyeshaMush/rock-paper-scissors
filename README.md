@@ -1,9 +1,8 @@
 # rock-paper-scissors
-A rock, paper and scissors game in JavaScript
 
 A rock, paper and scissors game with GUI in JavaScript.
 
-->Skills used in this project:
+-> Skills used in this project:
 
 1. Working with variables
 
