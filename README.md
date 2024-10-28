@@ -14,3 +14,5 @@ A rock, paper and scissors game with GUI in JavaScript.
 
 5. Working with DOM and event listeners 
 
+-> Images used in this program were taken from Canva
+
