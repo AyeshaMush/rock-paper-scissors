@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Schoolbell&display=swap');
+
+.schoolbell-regular {
+    font-family: "Schoolbell", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+body {
+    background-color:#9ce15d;
+  }
+
+/*title of the game*/
+.title{
+    color:#A25DE1;
+    font-size: 50px;
+    display:flex;
+    justify-content:center;
+    padding:30px;
+    margin:15px;
+}
+
+/* aligning the buttons to the center of the page */
+.selection-buttons{
+    display:flex;
+    justify-content:center;
+    align-content:center;
+    gap:30px;
+}
