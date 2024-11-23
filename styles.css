@@ -41,18 +41,28 @@ body {
     border: 5px solid #A25DE1;
 }
 
-div{
+/* div{
     border:5px solid red;
-}
+} */
 
 #output-text{
     display:flex;
     margin:15px;
     padding:30px;
+    justify-content: center;
+    text-align: center;
+    font-size: large;
 }
 
 #replay-game{
     display:flex;
     margin:15px;
     padding:30px;
+    justify-content: center;
+}
+
+#play-again-button{
+    padding:10px;
+    background-color:#ec5b2e;
+    display:none;
 }
