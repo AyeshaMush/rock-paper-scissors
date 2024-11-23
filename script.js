@@ -31,6 +31,9 @@ function getHumanChoice() {
         }
         else {
             playRound(humanSelection, computerSelection);
+            if (computerScore === 5 || humanScore === 5) {
+                finalWinner();
+            }
         }
     });
 
@@ -44,6 +47,9 @@ function getHumanChoice() {
         }
         else {
             playRound(humanSelection, computerSelection);
+            if (computerScore === 5 || humanScore === 5) {
+                finalWinner();
+            }
         }
     });
 
@@ -57,6 +63,9 @@ function getHumanChoice() {
         }
         else {
             playRound(humanSelection, computerSelection);
+            if (computerScore === 5 || humanScore === 5) {
+                finalWinner();
+            }
         }
     });
 }
