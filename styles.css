@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Schoolbell&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .schoolbell-regular {
     font-family: "Schoolbell", cursive;
     font-weight: 400;
@@ -8,7 +14,8 @@
   
 body {
     background-color:#9ce15d;
-  }
+    min-height: 100vh;
+}
 
 /*title of the game*/
 .title{
@@ -21,9 +28,31 @@ body {
 }
 
 /* aligning the buttons to the center of the page */
-.selection-buttons{
+#selection-buttons{
     display:flex;
     justify-content:center;
     align-content:center;
-    gap:30px;
+    gap:50px;
+    cursor: pointer;
+    transition: border-color 0.3s;
+}
+
+#rock-button:active, #paper-button:active, #scissor-button:active{
+    border: 5px solid #A25DE1;
+}
+
+div{
+    border:5px solid red;
+}
+
+#output-text{
+    display:flex;
+    margin:15px;
+    padding:30px;
+}
+
+#replay-game{
+    display:flex;
+    margin:15px;
+    padding:30px;
 }
