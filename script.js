@@ -118,11 +118,10 @@ function playGame() {
     alert("Welcome to this game of rock, paper and scissors!");
     alert("You will be playing against the computer. Remember that rock beats scissors, scissors beat paper, and paper beats rocks.");
 
+
     getHumanChoice();
 
 }
 
 playGame();
-// if(humanScore===5 || computerScore===5){
-// finalWinner();
-// }
+
